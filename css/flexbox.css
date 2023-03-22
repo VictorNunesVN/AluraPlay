@@ -18,11 +18,29 @@
     /*alterando o eixo*/
     flex-direction: column;
     /*fazendo com que os flex-itens ocupem o todo espaço na flexbox*/
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
+    ou */
+    flex-flow: column wrap;
+    
+}
+
+.superior__secao__container{
+    display: flex;
+    /*Alinha os itens flexíveis ao longo do eixo transversal da linha atual do contêiner flexível.*/
+    align-items: center;
+    /*Especifica como o espaço em branco é tratado em um elemento. no exemplo, não vai permitir que as palavras pulem de linha por falta de espaço.*/
+    white-space: nowrap;
+    /*aplicando barra de rolagem*/
+    overflow: scroll;
+    gap: 1em;
 }
 
 @media (min-width:834px){
     .cabecalho__pesquisar__item{
         display: block;
+    }
+    .rodape__container{
+        /*Alinha os flex-itens ao longo do eixo principal da linha atual do contêiner flexível.Colocando um espaçamento*/
+        justify-content: space-between;
     }
 }
