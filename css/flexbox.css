@@ -1,0 +1,28 @@
+.cabecalho__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Deixando o cabeçalho fixo*/
+    position: fixed;
+    /*Passando a coordenada de onde se quer ele fixo, no caso fixo ligado ao topo*/
+    top: 0;
+
+}
+
+.cabecalho__pesquisar__item{
+    display: none;
+}
+
+.rodape__container{
+    display: flex;
+    /*alterando o eixo*/
+    flex-direction: column;
+    /*fazendo com que os flex-itens ocupem o todo espaço na flexbox*/
+    flex-wrap: wrap;
+}
+
+@media (min-width:834px){
+    .cabecalho__pesquisar__item{
+        display: block;
+    }
+}
