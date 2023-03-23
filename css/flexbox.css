@@ -35,6 +35,13 @@
     gap: 1em;
 }
 
+.menu__container{
+    position: fixed;
+    bottom: 0;
+    height: 74px;
+    width: 100%;
+}
+
 @media (min-width:834px){
     .cabecalho__pesquisar__item{
         display: block;
