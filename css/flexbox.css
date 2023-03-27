@@ -56,6 +56,11 @@
     display: none;
 }
 
+.videos__item{
+    height: 303px;
+    width: 280px;
+}
+
 .menu__lista li{
     /*alinha fora do eixo principal*/
     align-items: center;
