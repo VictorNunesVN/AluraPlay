@@ -59,6 +59,8 @@
 .videos__item{
     height: 303px;
     width: 280px;
+    /*O flex-grow define o fator de crescimento flexível. Números negativos são inválidos. É aplicado apenas nos itens dos elementos pai*/
+    flex-grow: 3;
 }
 
 .menu__lista li{
@@ -99,6 +101,11 @@
     color: #444444;
 }
 
+.videos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 
 @media (min-width:834px){
